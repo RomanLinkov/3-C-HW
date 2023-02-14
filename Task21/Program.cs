@@ -3,23 +3,23 @@ using static System.Console;
 
 Clear();
 
-WriteLine("Введите координаты точки А последовательно Xa Ya Za:");
-int Xa=int.Parse(ReadLine());
-int Ya=int.Parse(ReadLine());
-int Za=int.Parse(ReadLine());
+WriteLine("Введите координаты точки А последовательно xa ya za:");
+int xa=int.Parse(ReadLine());
+int ya=int.Parse(ReadLine());
+int za=int.Parse(ReadLine());
 
-WriteLine("Введите координаты точки B последовательно Xa Ya Za:");
-int Xb=int.Parse(ReadLine());
-int Yb=int.Parse(ReadLine());
-int Zb=int.Parse(ReadLine());
+WriteLine("Введите координаты точки B последовательно xa ya za:");
+int xb=int.Parse(ReadLine());
+int yb=int.Parse(ReadLine());
+int zb=int.Parse(ReadLine());
 
 int SquareDiff(int x1, int x2)
 {
-    int SQ = (x2 - x1)*(x2 - x1);
-    return SQ;
+    int sq = (x2 - x1)*(x2 - x1);
+    return sq;
 }
 
-double Distance = Math.Sqrt(SquareDiff(Xa, Xb) + SquareDiff(Ya, Yb) + SquareDiff(Za, Zb));
+double Distance = Math.Sqrt(SquareDiff(xa, xb) + SquareDiff(ya, yb) + SquareDiff(za, zb));
 Distance = Math.Round(Distance, 2);
 
 WriteLine($"Расстояние между A и B = {Distance}");

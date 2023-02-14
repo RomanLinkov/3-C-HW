@@ -4,11 +4,11 @@ using static System.Console;
 Clear();
 
 WriteLine("Введите число: ");
-String Number1=ReadLine();
-int length=Number1.Length;
+String number1=ReadLine();
+int length=number1.Length;
 
 int[] array = new int[length];
-int k = Convert.ToInt32(Number1);
+int k = Convert.ToInt32(number1);
 int i=0;
 
 while (i<length) 
